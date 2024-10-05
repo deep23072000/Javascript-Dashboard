@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "id": "eb9a",
+      "name": "Deepak",
+      "email": "email@gmail.com",
+      "image": "https://t3.ftcdn.net/jpg/05/17/79/88/360_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct.jpg",
+      "mob": "1234567",
+      "password": "1234",
+      "cpassword": "1234"
+    },
+    {
+      "id": "2661",
+      "name": "Ankit",
+      "email": "dp089901@gmail.com",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtRs_rWILOMx5-v3aXwJu7LWUhnPceiKvvDg&s",
+      "mob": "12345671fgt",
+      "password": "12345",
+      "cpassword": "12345"
+    }
+  ]
+}
