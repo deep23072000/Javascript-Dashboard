@@ -6,6 +6,8 @@ function reg(){
     let password = document.querySelector('#password').value;
     let cpassword = document.querySelector('#cpassword').value;
 
+
+    
     let userinfo = {
         "name":name,
         "email":email,
@@ -22,6 +24,9 @@ function reg(){
         },
         body:JSON.stringify(userinfo)
     })
+
+    // window.location.href = "./index.html"
+    window.open("index.html")
 
 }
 

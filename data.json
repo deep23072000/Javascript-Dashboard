@@ -17,6 +17,51 @@
       "mob": "12345671fgt",
       "password": "12345",
       "cpassword": "12345"
+    },
+    {
+      "id": "e029",
+      "name": "Aryan",
+      "email": "aryan@gmail.com",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzk92qOx7c5k5fybjVbUkwg6BGW_ptjgID9A&s",
+      "mob": "1234567890",
+      "password": "123456",
+      "cpassword": "123456"
+    },
+    {
+      "id": "ac38",
+      "name": "Deepak Patel",
+      "email": "dp089901@gmail.com",
+      "image": "",
+      "mob": "09399431102",
+      "password": "1234",
+      "cpassword": "1234"
+    },
+    {
+      "id": "f732",
+      "name": "Deepak Patel",
+      "email": "dp089901@gmail.com",
+      "image": "",
+      "mob": "09399431102",
+      "password": "12",
+      "cpassword": "12"
+    },
+    {
+      "id": "f806",
+      "name": "Deepak Patel",
+      "email": "dp089901@gmail.com",
+      "image": "",
+      "mob": "09399431102",
+      "password": "1",
+      "cpassword": "1"
+    },
+    {
+      "id": "58fd",
+      "name": "Deepak Patel",
+      "email": "dp089901@gmail.com",
+      "image": "",
+      "mob": "09399431102",
+      "password": "345",
+      "cpassword": "245"
     }
   ]
 }
