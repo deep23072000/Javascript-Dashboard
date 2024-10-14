@@ -72,3 +72,22 @@
         display: block;
     }
 }
+/* ==================topbar============= */
+
+#topbar{
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+#analytics{
+    margin-left:200px ;
+    display: flex;
+}
+#analytics div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 30px;
+}
