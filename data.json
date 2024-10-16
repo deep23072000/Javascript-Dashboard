@@ -64,7 +64,26 @@
       "cpassword": "245"
     }
   ],
-  "products":[
-    
+  "products": [
+    {
+      "id": "03d9",
+      "name": "Deepak",
+      "email": "email@gmail.com"
+    },
+    {
+      "id": "0063",
+      "name": "yashwin",
+      "email": "yaswinmaran@gmail.com"
+    },
+    {
+      "id": "e954",
+      "name": "Abhay",
+      "email": "abhay@gmail.com"
+    },
+    {
+      "id": "5832",
+      "name": "dcjihdf",
+      "email": "email@gmail.com"
+    }
   ]
 }

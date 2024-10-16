@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body onload="info()">
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#"> <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5-3YjBcXTqKUlOAeUUtuOLKgQSma2wGG1g&s" alt=""> </a></li>
+            <li id="username"></li>
+            <li id="useremail"></li>
+            <li><a href="dashboard.html"> dashboard </a></li>
+            <li><a href="product.html"> product </a></li>
+            <li><a href="#"> user </a></li>
+            <li><a href="#"> sale </a></li>
+            <li><a href="#"> order </a></li>
+            <li><a href="#"> reviews </a></li>
+            <li><a href="#"> report </a></li>
+            <li><a href="#"> setting </a></li>
+        </ul>
+    </aside>
+    <aside class="smallsidebar">
+        <ul>
+            <li onclick="showside()"> <i style="color: white;" class="fa-solid fa-bars"></i> </li>
+            <li><a href="#"> <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5-3YjBcXTqKUlOAeUUtuOLKgQSma2wGG1g&s" alt=""> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="product.html"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+            <li><a href="#"> <i class="fa-solid fa-table-columns"></i> </a></li>
+        </ul>
+    </aside>
+
+    <h1 id="topbar"> admin dashboard</h1>
+    <!-- ====================================================== -->
+
+    <button onclick="addinfo()"> add info </button>
+
+    <form class="productform">
+        <input type="text" placeholder="Enter name" id="name"> <br>
+        <input type="text" placeholder="Enter email" id="email"> <br>
+        <button onclick="submitdata()"> add </button>
+    </form>
+
+    <!-- ===================table=================== -->
+     <center>
+     <table cellspacing="20px" id="showtabledata">
+        
+        
+     </table>
+     </center>
+     <!-- ======================================================= -->
+    
+          <script src="./sidebar.js"></script>
+     <script src="./logininfo.js"></script>
+     <script src="./product.js"></script>
+</body>
+</html>
