@@ -6,3 +6,7 @@
     position: absolute;
     margin-left: 600px;
 }
+
+.ubtn{
+    display: none;
+}
