@@ -100,3 +100,62 @@ function finalupdate(){
     </tr>
     `).join(" ")
 })()
+
+
+// ==============search=========================
+
+
+async function datasearch(){
+    let data = await fetch('http://localhost:4000/products');
+    let response = await data.json();
+
+    let selectoption = document.querySelector('#searchoption').value;
+    // alert(selectoption);
+    let selectsearchbox = document.querySelector('#searchbox').value;
+
+    // alert(selectsearchbox);
+
+    let storefilterdata;
+    let selecttr;
+
+    switch (selectoption){
+        case 'name':
+             storefilterdata = response.filter((e)=> e.name === selectsearchbox);
+             console.log(storefilterdata);
+            //  ==========display data
+
+             selecttr = document.querySelector('#showtabledata');
+             selecttr.innerHTML = storefilterdata.map((items)=>`
+             <tr>
+             <td> ${items.id}</td>
+             <td> ${items.name}</td>
+             <td> ${items.email}</td>
+             <td onclick="del('${items.id}')"> <i class="fa-solid fa-trash"></i></td>
+             <td onclick="openform('${items.id}')"> <i class="fa-solid fa-pen-to-square"></i></td>
+             </tr>
+             `).join(" ")
+             break;
+        
+        case 'email':
+             storefilterdata = response.filter((e)=>e.email === selectsearchbox);
+             console.log(storefilterdata);
+            //  ==========display data
+             selecttr = document.querySelector('#showtabledata');
+             selecttr.innerHTML = storefilterdata.map((items)=>`
+             <tr>
+             <td> ${items.id}</td>
+             <td> ${items.name}</td>
+             <td> ${items.email}</td>
+             <td onclick="del('${items.id}')"> <i class="fa-solid fa-trash"></i></td>
+             <td onclick="openform('${items.id}')"> <i class="fa-solid fa-pen-to-square"></i></td>
+             </tr>
+             `).join(" ")
+
+             break;
+    }
+
+    // let newarr = Array.map((e)=>e/2);
+
+
+
+}
