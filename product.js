@@ -85,12 +85,17 @@ function finalupdate(){
     alert("right code");
     return false;
 }
+// ===========================================================
+let start = 0;
+let end =5;
 (async function(){
     let data = await fetch('http://localhost:4000/products');
     let response = await data.json();
 
+    let filterdata = response.filter((e,index)=>{return index >= start && index < end})
+ 
     let selecttr = document.querySelector('#showtabledata');
-    selecttr.innerHTML = response.map((items)=>`
+    selecttr.innerHTML = filterdata.map((items)=>`
     <tr>
     <td> ${items.id}</td>
     <td> ${items.name}</td>
@@ -99,7 +104,44 @@ function finalupdate(){
     <td onclick="openform('${items.id}')"> <i class="fa-solid fa-pen-to-square"></i></td>
     </tr>
     `).join(" ")
-})()
+})();
+
+
+async function pageincrease(){
+    let data = await fetch('http://localhost:4000/products');
+    let response = await data.json();
+
+    
+
+    if(end < response.length){
+        
+        start = start + 5;
+        end = end + 5;
+
+       let filterdata = response.filter((e,index)=>{return index >= start && index < end})
+ 
+       let selecttr = document.querySelector('#showtabledata');
+       selecttr.innerHTML = filterdata.map((items)=>`
+    <tr>
+    <td> ${items.id}</td>
+    <td> ${items.name}</td>
+    <td> ${items.email}</td>
+    <td onclick="del('${items.id}')"> <i class="fa-solid fa-trash"></i></td>
+    <td onclick="openform('${items.id}')"> <i class="fa-solid fa-pen-to-square"></i></td>
+    </tr>
+    `).join(" ");
+    if(end === response.length){
+        let s = document.querySelector('#incbtn');
+        s.style.display = "none"
+    } 
+    }
+       
+    else{
+        alert("dd")
+    }
+}
+
+// ==============================================
 
 
 // ==============search=========================
